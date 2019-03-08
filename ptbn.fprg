@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="AM"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-08 04:30:05 PM"/>
+        <attribute name="created" value="QU07UEhVVEhJTkg7MjAxOS0wMy0wODswNDoxMDowMCBQTTsyMDMw"/>
+        <attribute name="edited" value="QU07UEhVVEhJTkg7MjAxOS0wMy0wODswNDozMDowNSBQTTsxOzIxNDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p a=&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;nh&#7853;p b=&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh c&#243; v&#244; s&#7889; nghi&#7879;m&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh v&#244; nghi&#7879;m&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh v&#244; nghi&#7879;m&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="x" expression="-b/a"/>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh c&#243; nghi&#7879;m l&#224; &quot; &amp; x" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

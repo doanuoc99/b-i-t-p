@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="AM"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-08 04:57:46 PM"/>
+        <attribute name="created" value="QU07UEhVVEhJTkg7MjAxOS0wMy0wODswNDozMDoxMCBQTTsyMDMz"/>
+        <attribute name="edited" value="QU07UEhVVEhJTkg7MjAxOS0wMy0wODswNDo1Nzo0NiBQTTsxOzIxNTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <declare name="denta" type="Real" array="False" size=""/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <output expression="&quot;nh&#7853;p a=&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;nh&#7853;p b=&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;nh&#7853;p c=&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="denta" expression="b^2-4*a*c"/>
+            <if expression="denta==0">
+                <then>
+                    <assign variable="x" expression="-b/(2*a)"/>
+                    <output expression="&quot;ph&#432;&#417;ng tr&#236;nh c&#243; nghi&#7879;m k&#233;p l&#224; &quot; &amp; x" newline="True"/>
+                </then>
+                <else>
+                    <if expression="denta&gt;0">
+                        <then>
+                            <assign variable="x1" expression="(-b-sqrt(denta))/(2*a)"/>
+                            <assign variable="x2" expression="(-b+sqrt(denta))/(2*a)"/>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh c&#243; 2 nghi&#7879;m x1,x2 l&#7847;n l&#432;&#7907;t l&#224; &quot; &amp; x1 &amp;&quot; v&#224; &quot;&amp; x2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;ph&#432;&#417;ng tr&#236;nh v&#244; nghi&#7879;m&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
