@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="AM"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-03-12 08:39:35 PM"/>
+        <attribute name="created" value="QU07UEhVVEhJTkg7MjAxOS0wMy0xMjswNzozNDo1OSBQTTsyMDQ4"/>
+        <attribute name="edited" value="QU07UEhVVEhJTkg7MjAxOS0wMy0xMjswODozOTozNSBQTTsxOzIxNTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;c&#7847;n t&#236;m d&#227;y fibonacci g&#7891;m bao nhi&#234;u s&#7889;&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <declare name="dayso" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="i==0 or i==1">
+                    <then>
+                        <assign variable="dayso[i]" expression="i"/>
+                    </then>
+                    <else>
+                        <assign variable="dayso[i]" expression="dayso[i-2]+dayso[i-1]"/>
+                    </else>
+                </if>
+                <output expression="dayso[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
